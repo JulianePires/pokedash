@@ -1,0 +1,72 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #6CDC3E;
+}
+
+p{
+  font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.App{
+  background-color: #6CDC3E;
+}
+
+.card{
+  width: 150px;
+  margin: 2vw;
+  padding: 1vw;
+  
+}
+
+#pokebola{
+  width: 40px;
+  margin: 1vw;
+  animation: spin 1s linear 3;
+}
+
+.row{
+  background: none;
+}
+
+#pokemon {
+  width: 100px;
+}
+
+@keyframes spin {
+  0% {
+   transform: rotateZ(0deg);
+  }
+  50%{
+    transform: rotateZ(45deg);
+  }
+  100% {
+   transform: rotateZ(-10deg);
+  }
+ }
+
+ .efeito-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.efeito-grow:hover, .efeito-grow:focus, .efeito-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#cartao {
+    max-width: 250px;
+    border-radius: 50px;
+    margin: 2vw;
+}
